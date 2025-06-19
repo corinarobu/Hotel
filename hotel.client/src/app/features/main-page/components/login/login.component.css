@@ -1,0 +1,86 @@
+/* Layout - clean white background */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+  position: relative;
+}
+
+/* Close button */
+.custom-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+/* Card styling */
+.login-card {
+  max-width: 420px;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border: 1px solid #f1f1f1;
+}
+
+/* Heading */
+.login-title {
+  color: #d63384;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+/* Labels */
+.text-grey {
+  color: #6c757d;
+}
+
+/* Inputs */
+.login-input {
+  border: none;
+  border-bottom: 2px solid #ced4da;
+  border-radius: 0;
+  box-shadow: none;
+  transition: border-color 0.3s;
+}
+
+  .login-input:focus {
+    border-bottom-color: #d63384;
+    outline: none;
+    box-shadow: none;
+  }
+
+/* Submit Button */
+.login-btn {
+  background-color: #d63384;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+  .login-btn:disabled {
+    background-color: #e2a5c0;
+  }
+
+  .login-btn:hover:not(:disabled) {
+    background-color: #c02570;
+  }
+
+/* Register link */
+.register-link {
+  color: #d63384;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+  .register-link:hover {
+    text-decoration: underline;
+  }

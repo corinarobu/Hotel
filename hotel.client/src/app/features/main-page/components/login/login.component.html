@@ -1,0 +1,52 @@
+<button type="button" class="btn-close custom-close" aria-label="Close" [routerLink]="'/main-page'"></button>
+
+<div class="container login-container">
+  <div class="card login-card">
+    <div class="card-body">
+      <h2 class="text-center login-title">Login</h2>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div *ngIf="loginError" class="alert alert-danger text-center">
+          {{ loginError }}
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label text-grey">Email</label>
+          <input type="email"
+                 class="form-control login-input"
+                 id="email"
+                 formControlName="email"
+                 placeholder="Enter your email" />
+          <small class="text-danger" *ngIf="email?.invalid && email?.touched">
+            Email is required.
+          </small>
+        </div>
+
+        <div class="mb-3 position-relative">
+          <label for="password" class="form-label text-grey">Password</label>
+          <input [type]="showPassword ? 'text' : 'password'"
+                 class="form-control login-input pe-5"
+                 id="password"
+                 formControlName="password"
+                 placeholder="Enter your password" />
+          <button type="button"
+                  class="btn btn-sm btn-outline-secondary position-absolute top-50 end-0 translate-middle-y me-2"
+                  (click)="togglePasswordVisibility()"
+                  tabindex="-1">
+            <i class="bi" [ngClass]="showPassword ? 'bi-eye-slash' : 'bi-eye'"></i>
+          </button>
+          <small class="text-danger" *ngIf="password?.invalid && password?.touched">
+            Password is required.
+          </small>
+        </div>
+
+        <button type="submit" class="btn login-btn" [disabled]="loginForm.invalid">
+          Login
+        </button>
+
+        <div class="text-center mt-4">
+          <span class="text-grey">Don't have an account?</span>
+          <a class="register-link" [routerLink]="'/register'">Register here</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

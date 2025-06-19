@@ -1,0 +1,98 @@
+.nav-tabs {
+  border-bottom: none;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+  .nav-tabs .nav-link {
+    border: none;
+    border-radius: 20px;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(214, 51, 132, 0.1);
+    color: #d63384;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+
+    .nav-tabs .nav-link.active {
+      background-color: #d63384;
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(214, 51, 132, 0.4);
+    }
+
+.tab-content {
+  margin-top: 2rem;
+}
+
+.card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #f8f9fa; 
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+  .card:hover {
+    transform: scale(1.01);
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+  }
+
+.card-body {
+  padding: 2rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #d63384;
+}
+
+.card-text {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #6c757d; 
+}
+
+.card ul {
+  padding-left: 1.2rem;
+}
+
+  .card ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #6c757d;
+  }
+
+.btn-primary {
+  margin-top: 1rem;
+  background-color: #d63384;
+  border-color: #d63384;
+  border-radius: 12px;
+  padding: 0.6rem 1.4rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+  .btn-primary:hover {
+    background-color: #b02a6f;
+    border-color: #b02a6f;
+    box-shadow: 0 4px 12px rgba(214, 51, 132, 0.3);
+  }
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+  }
+
+    .card img {
+      max-width: 100%;
+    }
+}

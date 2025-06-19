@@ -1,0 +1,28 @@
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.AccountManagement\obj\Debug\net8.0\Hotel.AccountManagement.csproj.AssemblyReference.cache
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.AccountManagement\obj\Debug\net8.0\Hotel.AccountManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.AccountManagement\obj\Debug\net8.0\Hotel.AccountManagement.AssemblyInfoInputs.cache
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.AccountManagement\obj\Debug\net8.0\Hotel.AccountManagement.AssemblyInfo.cs
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.AccountManagement\obj\Debug\net8.0\Hotel.AccountManagement.csproj.CoreCompileInputs.cache
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.AccountManagement\bin\Debug\net8.0\Hotel.AccountManagement.deps.json
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.AccountManagement\bin\Debug\net8.0\Hotel.AccountManagement.runtimeconfig.json
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.AccountManagement\bin\Debug\net8.0\Hotel.AccountManagement.dll
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.AccountManagement\bin\Debug\net8.0\Hotel.AccountManagement.pdb
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.AccountManagement\obj\Debug\net8.0\Hotel.AccountManagement.dll
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.AccountManagement\obj\Debug\net8.0\refint\Hotel.AccountManagement.dll
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.AccountManagement\obj\Debug\net8.0\Hotel.AccountManagement.pdb
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.AccountManagement\obj\Debug\net8.0\Hotel.AccountManagement.genruntimeconfig.cache
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.AccountManagement\obj\Debug\net8.0\ref\Hotel.AccountManagement.dll
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.AccountManagement\bin\Debug\net8.0\Hotel.AccountManagement.deps.json
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.AccountManagement\bin\Debug\net8.0\Hotel.AccountManagement.runtimeconfig.json
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.AccountManagement\bin\Debug\net8.0\Hotel.AccountManagement.dll
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.AccountManagement\bin\Debug\net8.0\Hotel.AccountManagement.pdb
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.AccountManagement\obj\Debug\net8.0\Hotel.AccountManagement.csproj.AssemblyReference.cache
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.AccountManagement\obj\Debug\net8.0\Hotel.AccountManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.AccountManagement\obj\Debug\net8.0\Hotel.AccountManagement.AssemblyInfoInputs.cache
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.AccountManagement\obj\Debug\net8.0\Hotel.AccountManagement.AssemblyInfo.cs
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.AccountManagement\obj\Debug\net8.0\Hotel.AccountManagement.csproj.CoreCompileInputs.cache
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.AccountManagement\obj\Debug\net8.0\Hotel.AccountManagement.dll
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.AccountManagement\obj\Debug\net8.0\refint\Hotel.AccountManagement.dll
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.AccountManagement\obj\Debug\net8.0\Hotel.AccountManagement.pdb
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.AccountManagement\obj\Debug\net8.0\Hotel.AccountManagement.genruntimeconfig.cache
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.AccountManagement\obj\Debug\net8.0\ref\Hotel.AccountManagement.dll

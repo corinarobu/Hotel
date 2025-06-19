@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container">
+    <!-- Logo/Branding -->
+    <a class="navbar-brand text-magenta fw-bold" [routerLink]="'/mainpage'">Hotel</a>
+
+    <!-- Navbar Toggle for Mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <!-- Menu Item for Authenticated Users -->
+        <li class="nav-item" *ngIf="userFullName">
+          <a class="nav-link text-muted" [routerLink]="'/menu'">Menu</a>
+        </li>
+
+        <!-- Book Room Item for Authenticated Users -->
+        <li class="nav-item" *ngIf="userFullName">
+          <a class="nav-link text-muted" [routerLink]="'/book-room'">Book Rooms</a>
+        </li>
+
+        <!-- Admin Dashboard Item for Admins -->
+        <li class="nav-item" *ngIf="isAdmin">
+          <a class="nav-link text-muted" [routerLink]="'/admin-dashboard'">Admin Dashboard</a>
+        </li>
+
+        <!-- Login and Register for Guests -->
+        <li class="nav-item" *ngIf="!userFullName">
+          <a class="nav-link text-muted" [routerLink]="'/login'">Login</a>
+        </li>
+        <li class="nav-item" *ngIf="!userFullName">
+          <a class="nav-link text-muted" [routerLink]="'/register'">Register</a>
+        </li>
+
+        <!-- User Profile Dropdown for Authenticated Users -->
+        <li class="nav-item dropdown" *ngIf="userFullName">
+          <a class="nav-link dropdown-toggle text-magenta" href="#" role="button" data-bs-toggle="dropdown">
+            {{ userFullName | titlecase }}
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="/add-bank">Add Bank</a></li>
+            <li><a class="dropdown-item" href="/my-reservations">My Reservations</a></li>
+            <li><a class="dropdown-item" (click)="logout()">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

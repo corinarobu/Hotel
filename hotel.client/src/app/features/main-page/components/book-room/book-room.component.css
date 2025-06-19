@@ -1,0 +1,146 @@
+/* === Base Styling === */
+body {
+  background-color: #f7f7f7;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  color: #4a4a4a;
+}
+
+h2 {
+  color: #d81b60; /* Magenta */
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* === Filter Section === */
+label.form-label {
+  font-weight: 600;
+  color: #6b6b6b;
+  font-size: 0.95rem;
+}
+
+select.form-select,
+input.form-control {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  padding: 8px 12px;
+}
+
+  select.form-select:focus,
+  input.form-control:focus {
+    border-color: #d81b60;
+    box-shadow: 0 0 0 0.2rem rgba(216, 27, 96, 0.25);
+    outline: none;
+  }
+
+/* === Room Card Styles === */
+.card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(128, 128, 128, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+}
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(128, 128, 128, 0.2);
+  }
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.card-title {
+  color: #d81b60;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+/* === Buttons === */
+.btn-primary,
+.btn-success {
+  background-color: #d81b60;
+  border: none;
+  border-radius: 12px;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+}
+
+  .btn-primary:hover,
+  .btn-success:hover {
+    background-color: #c2185b;
+  }
+
+.btn-warning {
+  background-color: #9e9e9e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  padding: 0.35rem 0.8rem;
+  transition: background-color 0.3s ease;
+}
+
+  .btn-warning:hover {
+    background-color: #7e7e7e;
+  }
+
+/* === Rating Section === */
+select#rating {
+  border-radius: 10px;
+}
+
+input[type="hidden"] {
+  display: none;
+}
+
+/* === Custom Utilities === */
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 160px;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}

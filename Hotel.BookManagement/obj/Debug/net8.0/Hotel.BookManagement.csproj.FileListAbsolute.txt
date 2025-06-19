@@ -1,0 +1,34 @@
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.BookManagement\bin\Debug\net8.0\Hotel.BookManagement.deps.json
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.BookManagement\bin\Debug\net8.0\Hotel.BookManagement.runtimeconfig.json
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.BookManagement\bin\Debug\net8.0\Hotel.BookManagement.dll
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.BookManagement\bin\Debug\net8.0\Hotel.BookManagement.pdb
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.BookManagement\obj\Debug\net8.0\Hotel.BookManagement.csproj.AssemblyReference.cache
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.BookManagement\obj\Debug\net8.0\Hotel.BookManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.BookManagement\obj\Debug\net8.0\Hotel.BookManagement.AssemblyInfoInputs.cache
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.BookManagement\obj\Debug\net8.0\Hotel.BookManagement.AssemblyInfo.cs
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.BookManagement\obj\Debug\net8.0\Hotel.BookManagement.csproj.CoreCompileInputs.cache
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.BookManagement\obj\Debug\net8.0\Hotel.BookManagement.dll
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.BookManagement\obj\Debug\net8.0\refint\Hotel.BookManagement.dll
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.BookManagement\obj\Debug\net8.0\Hotel.BookManagement.pdb
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.BookManagement\obj\Debug\net8.0\Hotel.BookManagement.genruntimeconfig.cache
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.BookManagement\obj\Debug\net8.0\ref\Hotel.BookManagement.dll
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.BookManagement\bin\Debug\net8.0\Hotel.AccountManagement.dll
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.BookManagement\bin\Debug\net8.0\Hotel.AccountManagement.pdb
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.BookManagement\obj\Debug\net8.0\Hotel.Bo.94422084.Up2Date
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.BookManagement\bin\Debug\net8.0\Hotel.BookManagement.deps.json
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.BookManagement\bin\Debug\net8.0\Hotel.BookManagement.runtimeconfig.json
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.BookManagement\bin\Debug\net8.0\Hotel.BookManagement.dll
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.BookManagement\bin\Debug\net8.0\Hotel.BookManagement.pdb
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.BookManagement\bin\Debug\net8.0\Hotel.AccountManagement.dll
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.BookManagement\bin\Debug\net8.0\Hotel.AccountManagement.pdb
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.BookManagement\obj\Debug\net8.0\Hotel.BookManagement.csproj.AssemblyReference.cache
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.BookManagement\obj\Debug\net8.0\Hotel.BookManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.BookManagement\obj\Debug\net8.0\Hotel.BookManagement.AssemblyInfoInputs.cache
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.BookManagement\obj\Debug\net8.0\Hotel.BookManagement.AssemblyInfo.cs
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.BookManagement\obj\Debug\net8.0\Hotel.BookManagement.csproj.CoreCompileInputs.cache
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.BookManagement\obj\Debug\net8.0\Hotel.Bo.94422084.Up2Date
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.BookManagement\obj\Debug\net8.0\Hotel.BookManagement.dll
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.BookManagement\obj\Debug\net8.0\refint\Hotel.BookManagement.dll
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.BookManagement\obj\Debug\net8.0\Hotel.BookManagement.pdb
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.BookManagement\obj\Debug\net8.0\Hotel.BookManagement.genruntimeconfig.cache
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.BookManagement\obj\Debug\net8.0\ref\Hotel.BookManagement.dll

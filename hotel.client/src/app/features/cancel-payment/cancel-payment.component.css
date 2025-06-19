@@ -1,0 +1,31 @@
+.payment-canceled-container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 40px;
+  background-color: #f8f9fa;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+  .payment-canceled-container h1 {
+    color: #d63384; /* Magenta */
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .payment-canceled-container p {
+    color: #6c757d; /* Grey */
+    font-size: 1.1rem;
+  }
+
+  .payment-canceled-container .btn-outline-danger {
+    border-color: #d63384;
+    color: #d63384;
+    transition: all 0.3s ease-in-out;
+  }
+
+    .payment-canceled-container .btn-outline-danger:hover {
+      background-color: #d63384;
+      color: #fff;
+    }

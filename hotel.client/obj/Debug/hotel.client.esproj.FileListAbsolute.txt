@@ -1,0 +1,2 @@
+C:\Proiecte facultate\HotelAplicatie\Hotel\hotel.client\obj\Debug\hotel.client.esproj.CoreCompileInputs.cache
+C:\Users\Corina\OneDrive\Desktop\Hotel\hotel.client\obj\Debug\hotel.client.esproj.CoreCompileInputs.cache

@@ -1,0 +1,44 @@
+.bank-form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+}
+
+  .bank-form h2 {
+    color: #d100d1; /* vivid magenta similar to the carousel */
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .bank-form .form-label {
+    font-weight: 500;
+  }
+
+  .bank-form .form-control:focus {
+    border-color: #ff00ff;
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 255, 0.25);
+  }
+
+  .bank-form .text-danger {
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+  }
+
+  .bank-form .btn-primary {
+    background-color: #ff00ff;
+    border-color: #ff00ff;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+    .bank-form .btn-primary:hover {
+      background-color: #d100d1;
+      border-color: #d100d1;
+    }

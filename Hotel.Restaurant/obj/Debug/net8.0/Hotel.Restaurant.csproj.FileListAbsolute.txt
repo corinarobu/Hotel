@@ -1,0 +1,28 @@
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.Restaurant\bin\Debug\net8.0\Hotel.Restaurant.deps.json
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.Restaurant\bin\Debug\net8.0\Hotel.Restaurant.runtimeconfig.json
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.Restaurant\bin\Debug\net8.0\Hotel.Restaurant.dll
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.Restaurant\bin\Debug\net8.0\Hotel.Restaurant.pdb
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.Restaurant\obj\Debug\net8.0\Hotel.Restaurant.csproj.AssemblyReference.cache
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.Restaurant\obj\Debug\net8.0\Hotel.Restaurant.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.Restaurant\obj\Debug\net8.0\Hotel.Restaurant.AssemblyInfoInputs.cache
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.Restaurant\obj\Debug\net8.0\Hotel.Restaurant.AssemblyInfo.cs
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.Restaurant\obj\Debug\net8.0\Hotel.Restaurant.csproj.CoreCompileInputs.cache
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.Restaurant\obj\Debug\net8.0\Hotel.Restaurant.dll
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.Restaurant\obj\Debug\net8.0\refint\Hotel.Restaurant.dll
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.Restaurant\obj\Debug\net8.0\Hotel.Restaurant.pdb
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.Restaurant\obj\Debug\net8.0\Hotel.Restaurant.genruntimeconfig.cache
+C:\Proiecte facultate\HotelAplicatie\Hotel\Hotel.Restaurant\obj\Debug\net8.0\ref\Hotel.Restaurant.dll
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.Restaurant\bin\Debug\net8.0\Hotel.Restaurant.deps.json
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.Restaurant\bin\Debug\net8.0\Hotel.Restaurant.runtimeconfig.json
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.Restaurant\bin\Debug\net8.0\Hotel.Restaurant.dll
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.Restaurant\bin\Debug\net8.0\Hotel.Restaurant.pdb
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.Restaurant\obj\Debug\net8.0\Hotel.Restaurant.csproj.AssemblyReference.cache
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.Restaurant\obj\Debug\net8.0\Hotel.Restaurant.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.Restaurant\obj\Debug\net8.0\Hotel.Restaurant.AssemblyInfoInputs.cache
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.Restaurant\obj\Debug\net8.0\Hotel.Restaurant.AssemblyInfo.cs
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.Restaurant\obj\Debug\net8.0\Hotel.Restaurant.csproj.CoreCompileInputs.cache
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.Restaurant\obj\Debug\net8.0\Hotel.Restaurant.dll
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.Restaurant\obj\Debug\net8.0\refint\Hotel.Restaurant.dll
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.Restaurant\obj\Debug\net8.0\Hotel.Restaurant.pdb
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.Restaurant\obj\Debug\net8.0\Hotel.Restaurant.genruntimeconfig.cache
+C:\Users\Corina\OneDrive\Desktop\Hotel\Hotel.Restaurant\obj\Debug\net8.0\ref\Hotel.Restaurant.dll

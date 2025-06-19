@@ -1,0 +1,46 @@
+<app-nav-bar></app-nav-bar>
+<div class="container mt-4">
+  <h2 class="mb-3">My Reservations</h2>
+
+  <!-- Reservations Table -->
+  <table class="table table-bordered table-hover">
+    <thead class="table-dark">
+      <tr>
+        <th>Room ID</th>
+        <th>Price/Night</th>
+        <th>Check-In</th>
+        <th>Check-Out</th>
+        <th>Status</th>
+        <th>Payment</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let booking of paginatedReservations; let i = index"
+           [ngClass]="{
+               'table-success': booking.paymentStatus === 'Paid',
+                'table-danger': booking.paymentStatus !== 'Paid'
+           }"
+        >
+
+        <td>{{ booking.roomId }}</td>
+        <td>{{ booking.pricePerNight | currency }}</td>
+        <td>{{ booking.checkInDate | date }}</td>
+        <td>{{ booking.checkOutDate | date }}</td>
+        <td>{{ booking.status }}</td>
+        <td>{{ booking.paymentStatus }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- No Reservations Info -->
+  <div *ngIf="paginatedReservations.length === 0" class="alert alert-info">
+    No reservations found.
+  </div>
+
+  <!-- Pagination Controls -->
+  <div *ngIf="totalPages > 1" class="pagination">
+    <button class="btn btn-secondary" (click)="changePage(currentPage - 1)" [disabled]="currentPage === 1">Previous</button>
+    <span class="mx-2">Page {{ currentPage }} of {{ totalPages }}</span>
+    <button class="btn btn-secondary" (click)="changePage(currentPage + 1)" [disabled]="currentPage === totalPages">Next</button>
+  </div>
+</div>

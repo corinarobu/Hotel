@@ -1,0 +1,45 @@
+<button type="button" class="btn-close" aria-label="Close" [routerLink]="'/book-room'"></button>
+<div class="container">
+  <h2 class="text-center">Confirm Your Booking</h2>
+  <form (ngSubmit)="bookRoom()">
+
+    <div class="mb-3">
+      <label class="form-label">Check-in Date</label>
+      <input type="date" class="form-control" [(ngModel)]="checkInDate" name="checkInDate"
+             [min]="todayDate" (change)="updateCheckoutMinDate()" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Check-out Date</label>
+      <input type="date" class="form-control" [(ngModel)]="checkOutDate" name="checkOutDate"
+             [min]="minCheckoutDate" required>
+    </div>
+
+    <input type="hidden" [(ngModel)]="userId" name="userId">
+    <input type="hidden" [(ngModel)]="room.id_Room" name="roomId">
+
+    <div class="mb-3">
+      <p><strong>Price Per Night:</strong> {{ room.pricePerNight }}€</p>
+      <p *ngIf="checkInDate && checkOutDate"><strong>Total Price:</strong> {{ getTotalPrice() }}€</p>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="!room">Confirm Booking</button>
+    <div *ngIf="!hasBankAccount" class="alert alert-warning text-center mt-3">
+      You don’t have a bank account linked.
+      <a routerLink="/add-bank" class="fw-bold text-decoration-underline">Add one now</a> to proceed with booking.
+    </div>
+    <div *ngIf="roomBookedMessage" class="alert alert-danger mt-3">
+      {{ roomBookedMessage }}
+    </div>
+
+  </form>
+</div>
+<div *ngIf="faqs.length > 0">
+  <h3>Frequently Asked Questions</h3>
+  <ul>
+    <li *ngFor="let faq of faqs">
+      <strong>{{ faq.question }}</strong>
+      <p>{{ faq.answer }}</p>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,80 @@
+/* Global Style for Modern Look */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+/* Magenta Color Scheme */
+.text-magenta {
+  color: #d63384; /* Magenta */
+}
+
+.text-muted {
+  color: #6c757d; /* Grey text */
+}
+
+/* Header Styles */
+h2, h3, h4 {
+  font-weight: 600;
+}
+
+  h2.text-center {
+    font-size: 2rem;
+  }
+
+/* Section Styling */
+.row {
+  margin-bottom: 30px;
+}
+
+  .row.d-flex.align-items-stretch {
+    display: flex;
+    justify-content: space-between;
+  }
+
+/* Shadow effect for sections */
+.shadow-lg {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Photo Carousel */
+app-photo-carousel {
+  border-radius: 10px;
+}
+
+/* Map Section */
+app-map {
+  border-radius: 10px;
+}
+
+/* List of Landmarks */
+ul.list-unstyled {
+  padding-left: 1.5rem;
+  color: #6c757d; /* Grey for list text */
+}
+
+  ul.list-unstyled li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+/* Rooms, Restaurant, and Recommendations Sections */
+h2.text-center.text-magenta {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #d63384;
+  font-weight: 700;
+}
+
+/* Bottom Spacing and Border */
+.row.d-flex.align-items-stretch {
+  border-top: 1px solid #ddd;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}

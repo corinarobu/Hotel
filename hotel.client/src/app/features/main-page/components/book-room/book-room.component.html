@@ -1,0 +1,122 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="container mt-4">
+  <h2 class="text-center mb-4" style="padding-top:20px">Hotel Rooms</h2>
+
+  <div class="row mb-3">
+    <div class="col-md-2">
+      <label for="capacity" class="form-label">Capacity</label>
+      <select class="form-select" id="capacity" [(ngModel)]="selectedCapacity" (change)="applyFilters()">
+        <option value="">All</option>
+        <option *ngFor="let cap of [2, 3, 4]" [value]="cap">{{ cap }} persons</option>
+      </select>
+    </div>
+
+    <div class="col-md-2">
+      <label for="price" class="form-label">Price Per Night</label>
+      <input type="number" class="form-control" id="price" [(ngModel)]="maxPrice" placeholder="Max price" (input)="applyFilters()">
+    </div>
+
+    <div class="col-md-2">
+      <label for="availability" class="form-label">Availability</label>
+      <select class="form-select" id="availability" [(ngModel)]="selectedAvailability" (change)="applyFilters()">
+        <option [ngValue]="null">All</option>
+        <option [ngValue]="1">Available</option>
+        <option [ngValue]="0">Not Available</option>
+
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label for="viewType" class="form-label">View Type</label>
+      <select class="form-select" id="viewType" [(ngModel)]="selectedViewType" (change)="applyFilters()">
+        <option [ngValue]="null">All</option>
+        <option [ngValue]="0">Street</option>
+        <option [ngValue]="1">Mountain</option>
+      </select>
+    </div>
+
+    <div class="col-md-2">
+      <label for="breakfast" class="form-label">Breakfast Included</label>
+      <select class="form-select" id="breakfast" [(ngModel)]="selectedBreakfast" (change)="applyFilters()">
+        <option value="">All</option>
+        <option [value]="true">Yes</option>
+        <option [value]="false">No</option>
+      </select>
+    </div>
+
+    <div class="col-md-2">
+      <label for="mealPlan" class="form-label">Meal Plan</label>
+      <select class="form-select" id="mealPlan" [(ngModel)]="selectedMealPlan" (change)="applyFilters()">
+        <option [ngValue]="null">All</option>
+        <option [ngValue]="0">Standard</option>
+        <option [ngValue]="1">All Inclusive</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let room of filteredRoomsData">
+      <div class="card">
+        <img [src]="getRoomImage(room.capacity)" class="card-img-top" alt="Room Image">
+        <div class="card-body">
+          <h5 class="card-title">Room for {{ room.capacity }} people</h5>
+          <p class="card-text">
+            Price: {{ room.pricePerNight }} €/night
+            <button *ngIf="isAdmin" class="btn btn-warning btn-sm ml-2" (click)="updateRoomPrice(room)">
+              Update Price
+            </button>
+          </p>
+          <p class="card-text">
+            View: {{ getViewTypeName(room.viewType) }}
+            <button *ngIf="isAdmin" class="btn btn-warning btn-sm ml-2" (click)="updateRoomView(room)">
+              Update View
+            </button>
+          </p>
+          <p class="card-text">
+            Breakfast: {{ room.hasBreakfastIncluded ? 'Included' : 'Not included' }}
+            <button *ngIf="isAdmin" class="btn btn-warning btn-sm ml-2" (click)="updateRoomBreakfast(room)">
+              Update Breakfast
+            </button>
+          </p>
+          <p class="card-text">
+            Meal Plan: {{ getMealPlanName(room.mealPlan) }}
+            <button *ngIf="isAdmin" class="btn btn-warning btn-sm ml-2" (click)="updateRoomMealPlan(room)">
+              Update Meal Plan
+            </button>
+          </p>
+          <p class="card-text">
+            <strong>Status:</strong> {{ room.isAvailable ? 'Available' : 'Not Available' }}
+            <button *ngIf="isAdmin" class="btn btn-warning btn-sm ml-2" (click)="updateRoomAvailability(room)">
+              Update Availability
+            </button>
+          </p>
+
+          <p class="card-text">
+            <strong>Average Rating:</strong>
+            {{ averageRatings[room.id_Room] ? averageRatings[room.id_Room] : 'No ratings yet' }}
+          </p>
+
+          <button class="btn btn-primary"
+                  [disabled]="!room.isAvailable"
+                  (click)="selectRoom(room)">
+            Book Now
+          </button>
+
+          <div *ngIf="room.isAvailable">
+            <input type="hidden" [(ngModel)]="userId" name="userId">
+            <input type="hidden" [(ngModel)]="room.id_Room" name="roomId">
+            <label for="rating-{{ room.id_Room }}" class="form-label mt-2">Rate this Room:</label>
+            <select class="form-select" id="rating-{{ room.id_Room }}" [(ngModel)]="room.userRating">
+              <option *ngFor="let score of [1, 2, 3, 4, 5]" [value]="score">
+                {{ '★'.repeat(score) }}
+              </option>
+
+            </select>
+            <button class="btn btn-success mt-2" (click)="submitRating(room)">
+              Submit Rating
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

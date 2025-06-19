@@ -1,0 +1,102 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Menu</h2>
+  <div class="row">
+    <!-- Breakfast Section -->
+    <div class="col-md-6 mb-4">
+      <div class="card shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-center">Breakfast</h3>
+          <p class="card-text text-center">Start your day with our delicious breakfast options, including eggs, pancakes, and fresh juice.</p>
+          <ul class="list-group">
+            <li *ngFor="let product of breakfastProducts" class="list-group-item d-flex justify-content-between align-items-start">
+              <div>
+                <strong>{{product.name_Product}}</strong>
+                <p class="mb-0 text-muted">{{product.description_Product}}</p>
+              </div>
+              <span class="badge price-badge rounded-pill">${{product.price}}</span>
+              <div *ngIf="isAdmin">
+                <button class="btn btn-warning btn-sm ml-2" (click)="updateProductName(product)">Update Name</button>
+                <button class="btn btn-warning btn-sm ml-2" (click)="updateProductDescription(product)">Update Description</button>
+                <button class="btn btn-warning btn-sm ml-2" (click)="updateProductPrice(product)">Update Price</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lunch Section -->
+    <div class="col-md-6 mb-4">
+      <div class="card shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-center">Lunch</h3>
+          <p class="card-text text-center">Enjoy a variety of hearty meals, from sandwiches to gourmet dishes.</p>
+          <ul class="list-group">
+            <li *ngFor="let product of lunchProducts" class="list-group-item d-flex justify-content-between align-items-start">
+              <div>
+                <strong>{{product.name_Product}}</strong>
+                <p class="mb-0 text-muted">{{product.description_Product}}</p>
+              </div>
+              <span class="badge price-badge rounded-pill">${{product.price}}</span>
+              <div *ngIf="isAdmin">
+                <button class="btn btn-warning btn-sm ml-2" (click)="updateProductName(product)">Update Name</button>
+                <button class="btn btn-warning btn-sm ml-2" (click)="updateProductDescription(product)">Update Description</button>
+                <button class="btn btn-warning btn-sm ml-2" (click)="updateProductPrice(product)">Update Price</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dinner Section -->
+    <div class="col-md-6 mb-4">
+      <div class="card shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-center">Dinner</h3>
+          <p class="card-text text-center">Indulge in our finest dinner selections, featuring gourmet entrees.</p>
+          <ul class="list-group">
+            <li *ngFor="let product of dinnerProducts" class="list-group-item d-flex justify-content-between align-items-start">
+              <div>
+                <strong>{{product.name_Product}}</strong>
+                <p class="mb-0 text-muted">{{product.description_Product}}</p>
+              </div>
+              <span class="badge price-badge rounded-pill">${{product.price}}</span>
+              <div *ngIf="isAdmin">
+                <button class="btn btn-warning btn-sm ml-2" (click)="updateProductName(product)">Update Name</button>
+                <button class="btn btn-warning btn-sm ml-2" (click)="updateProductDescription(product)">Update Description</button>
+                <button class="btn btn-warning btn-sm ml-2" (click)="updateProductPrice(product)">Update Price</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Drinks Section -->
+    <div class="col-md-6 mb-4">
+      <div class="card shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-center">Drinks</h3>
+          <p class="card-text text-center">Refresh yourself with our selection of beverages.</p>
+          <ul class="list-group">
+            <li *ngFor="let product of drinksProducts" class="list-group-item d-flex justify-content-between align-items-start">
+              <div>
+                <strong>{{product.name_Product}}</strong>
+                <p class="mb-0 text-muted">{{product.description_Product}}</p>
+              </div>
+              <span class="badge price-badge rounded-pill">${{product.price}}</span>
+              <div *ngIf="isAdmin">
+                <button class="btn btn-warning btn-sm ml-2" (click)="updateProductName(product)">Update Name</button>
+                <button class="btn btn-warning btn-sm ml-2" (click)="updateProductDescription(product)">Update Description</button>
+                <button class="btn btn-warning btn-sm ml-2" (click)="updateProductPrice(product)">Update Price</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

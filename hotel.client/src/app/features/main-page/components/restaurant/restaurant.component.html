@@ -1,0 +1,61 @@
+<nav>
+  <div class="nav nav-tabs" id="meal-nav-tab" role="tablist">
+    <button class="nav-link active" id="meal-nav-home-tab" data-bs-toggle="tab" data-bs-target="#meal-nav-home" type="button" role="tab" aria-controls="meal-nav-home" aria-selected="true">
+      {{ meals[0]?.meal_Name }}
+    </button>
+    <button class="nav-link" id="meal-nav-profile-tab" data-bs-toggle="tab" data-bs-target="#meal-nav-profile" type="button" role="tab" aria-controls="meal-nav-profile" aria-selected="false">
+      {{ meals[2]?.meal_Name }}
+    </button>
+    <button class="nav-link" id="meal-nav-contact-tab" data-bs-toggle="tab" data-bs-target="#meal-nav-contact" type="button" role="tab" aria-controls="meal-nav-contact" aria-selected="false">
+      {{ meals[1]?.meal_Name }}
+    </button>
+  </div>
+</nav>
+
+<div class="tab-content p-3" id="meal-nav-tabContent">
+
+  <div class="tab-pane fade show active" id="meal-nav-home" role="tabpanel" aria-labelledby="meal-nav-home-tab" tabindex="0">
+    <div class="card flex-column flex-md-row">
+      <img src="breakfast.jpg" class="img-fluid rounded-start" alt="{{ meals[0]?.meal_Name }}" style="object-fit: cover; max-width: 50%;">
+      <div class="card-body d-flex flex-column justify-content-between">
+        <h5 class="card-title">{{ meals[0]?.meal_Name }}</h5>
+        <h6 class="text-muted mb-2">Description:</h6>
+        <p class="card-text">{{ meals[0]?.meal_Description }}</p>
+        <div class="mt-auto">
+          <a href="/login" class="btn btn-primary" *ngIf="!userFullName">Menu</a>
+          <a href="/menu" class="btn btn-primary" *ngIf="userFullName">Menu</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="meal-nav-profile" role="tabpanel" aria-labelledby="meal-nav-profile-tab" tabindex="0">
+    <div class="card flex-column flex-md-row">
+      <img src="launch.jpg" class="img-fluid rounded-start" alt="{{ meals[2]?.meal_Name }}" style="object-fit: cover; max-width: 50%;">
+      <div class="card-body d-flex flex-column justify-content-between">
+        <h5 class="card-title">{{ meals[2]?.meal_Name }}</h5>
+        <h6 class="text-muted mb-2">Description:</h6>
+        <p class="card-text">{{ meals[2]?.meal_Description }}</p>
+        <div class="mt-auto">
+          <a href="/login" class="btn btn-primary" *ngIf="!userFullName">Menu</a>
+          <a href="/menu" class="btn btn-primary" *ngIf="userFullName">Menu</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="meal-nav-contact" role="tabpanel" aria-labelledby="meal-nav-contact-tab" tabindex="0">
+    <div class="card flex-column flex-md-row">
+      <img src="dinner.jpg" class="img-fluid rounded-start" alt="{{ meals[1]?.meal_Name }}" style="object-fit: cover; max-width: 50%;">
+      <div class="card-body d-flex flex-column justify-content-between">
+        <h5 class="card-title">{{ meals[1]?.meal_Name }}</h5>
+        <h6 class="text-muted mb-2">Description:</h6>
+        <p class="card-text">{{ meals[1]?.meal_Description }}</p>
+        <div class="mt-auto">
+          <a href="/login" class="btn btn-primary" *ngIf="!userFullName">Menu</a>
+          <a href="/menu" class="btn btn-primary" *ngIf="userFullName">Menu</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

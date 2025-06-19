@@ -1,0 +1,74 @@
+<nav>
+  <div class="container">
+    <div class="nav nav-tabs" id="room-nav-tab" role="tablist">
+      <button class="nav-link active" id="room-nav-home-tab" data-bs-toggle="tab" data-bs-target="#room-nav-home" type="button" role="tab" aria-controls="room-nav-home" aria-selected="true">Double</button>
+      <button class="nav-link" id="room-nav-profile-tab" data-bs-toggle="tab" data-bs-target="#room-nav-profile" type="button" role="tab" aria-controls="room-nav-profile" aria-selected="false">Triple</button>
+      <button class="nav-link" id="room-nav-contact-tab" data-bs-toggle="tab" data-bs-target="#room-nav-contact" type="button" role="tab" aria-controls="room-nav-contact" aria-selected="false">Quadruple</button>
+    </div>
+  </div>
+</nav>
+
+<div class="tab-content p-3" id="room-nav-tabContent">
+  <div class="tab-pane fade show active" id="room-nav-home" role="tabpanel" aria-labelledby="room-nav-home-tab" tabindex="0">
+    <div class="card d-flex flex-column flex-md-row">
+      <img src="double.jpg" class="card-img-top card-img-md-left" alt="Double Room" style="object-fit: cover;  max-width: 50%;">
+      <div class="card-body d-flex flex-column justify-content-between">
+        <h5 class="card-title">Double Room</h5>
+        <p class="card-text">A cozy room for two people with a beautiful view.</p>
+        <h6>Facilities:</h6>
+        <ul>
+          <li><i class="bi bi-person"></i><i class="bi bi-person"></i> Double Bed</li>
+          <li><i class="bi bi-wifi"></i> Free Wi-Fi</li>
+          <li><i class="bi bi-tv"></i> 40'' TV</li>
+          <li><i class="bi bi-water"></i> Powerful Shower</li>
+          <li><i class="bi bi-person-lines-fill"></i> Hairdryer</li>
+          <li><i class="bi bi-slash-circle"></i> No Smoking</li>
+        </ul>
+        <a href="/login" class="btn btn-primary" *ngIf="!userFullName">Book Now</a>
+        <a href="/book-room" class="btn btn-primary" *ngIf="userFullName">Book Now</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="room-nav-profile" role="tabpanel" aria-labelledby="room-nav-profile-tab" tabindex="0">
+    <div class="card d-flex flex-column flex-md-row">
+      <img src="triple.jpg" class="card-img-top card-img-md-left" alt="Triple Room" style="object-fit: cover; ; max-width: 50%;">
+      <div class="card-body d-flex flex-column justify-content-between">
+        <h5 class="card-title">Triple Room</h5>
+        <p class="card-text">Spacious room for three guests, ideal for families.</p>
+        <h6>Facilities:</h6>
+        <ul>
+          <li><i class="bi bi-person"></i><i class="bi bi-person"></i> Double Bed + <i class="bi bi-person"></i> Single Bed</li>
+          <li><i class="bi bi-wifi"></i> Free Wi-Fi</li>
+          <li><i class="bi bi-tv"></i> 40'' TV</li>
+          <li><i class="bi bi-water"></i> Powerful Shower</li>
+          <li><i class="bi bi-person-lines-fill"></i> Hairdryer</li>
+          <li><i class="bi bi-slash-circle"></i> No Smoking</li>
+        </ul>
+        <a href="/login" class="btn btn-primary" *ngIf="!userFullName">Book Now</a>
+        <a href="/book-room" class="btn btn-primary" *ngIf="userFullName">Book Now</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="room-nav-contact" role="tabpanel" aria-labelledby="room-nav-contact-tab" tabindex="0">
+    <div class="card d-flex flex-column flex-md-row">
+      <img src="quadruple.jpg" class="card-img-top card-img-md-left" alt="Quadruple Room" style="object-fit: cover; max-width: 50%;">
+      <div class="card-body d-flex flex-column justify-content-between">
+        <h5 class="card-title">Quadruple Room</h5>
+        <p class="card-text">Perfect for groups of four, offering comfort and space.</p>
+        <h6>Facilities:</h6>
+        <ul>
+          <li><i class="bi bi-person"></i><i class="bi bi-person"></i> Double Bed + <i class="bi bi-person"></i><i class="bi bi-person"></i> Double Bed</li>
+          <li><i class="bi bi-wifi"></i> Free Wi-Fi</li>
+          <li><i class="bi bi-tv"></i> 40'' TV</li>
+          <li><i class="bi bi-water"></i> Powerful Shower</li>
+          <li><i class="bi bi-person-lines-fill"></i> Hairdryer</li>
+          <li><i class="bi bi-slash-circle"></i> No Smoking</li>
+        </ul>
+        <a href="/login" class="btn btn-primary" *ngIf="!userFullName">Book Now</a>
+        <a href="/book-room" class="btn btn-primary" *ngIf="userFullName">Book Now</a>
+      </div>
+    </div>
+  </div>
+</div>

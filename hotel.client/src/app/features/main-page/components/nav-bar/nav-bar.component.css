@@ -1,0 +1,79 @@
+/* Navbar Styles */
+.navbar {
+  background-color: #ffffff; /* White background */
+  border-bottom: 1px solid #ddd; /* Light grey border */
+  padding: 1rem 0; /* Vertical padding */
+  position: sticky; /* Make the navbar stick to the top */
+  top: 0; /* Stick to the top of the page */
+  z-index: 1000; /* Ensure the navbar stays on top of other content */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+}
+
+/* Navbar Brand */
+.navbar-brand {
+  color: #d63384; /* Magenta color for brand */
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+  .navbar-brand:hover {
+    color: #c2186a; /* Darker magenta for hover */
+  }
+
+/* Navbar Links */
+.nav-link {
+  color: #6c757d; /* Grey text for links */
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+  .nav-link:hover {
+    color: #d63384; /* Magenta on hover */
+  }
+
+  /* Active Navbar Link */
+  .nav-link.active {
+    color: #d63384; /* Magenta active link */
+    font-weight: 600;
+  }
+
+/* Dropdown Menu */
+.nav-item.dropdown .dropdown-toggle {
+  color: #d63384; /* Magenta for dropdown */
+  font-weight: 500;
+}
+
+.nav-item.dropdown .dropdown-menu {
+  background-color: #f8f9fa; /* Light background for dropdown */
+}
+
+.nav-item.dropdown .dropdown-item {
+  color: #6c757d; /* Grey text for items */
+}
+
+  .nav-item.dropdown .dropdown-item:hover {
+    background-color: #d63384; /* Magenta on hover */
+    color: #ffffff; /* White text */
+  }
+
+/* Navbar on Small Screens (Mobile) */
+.navbar-toggler-icon {
+  background-color: #d63384; /* Magenta toggler icon */
+}
+
+/* Navbar Spacing Adjustments */
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 1rem;
+}
+
+/* Hover effect for Navbar Links */
+.nav-item:hover .nav-link {
+  color: #d63384; /* Magenta on hover for links */
+}

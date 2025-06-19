@@ -1,0 +1,100 @@
+/* Tabs */
+.nav-tabs {
+  border-bottom: none;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+  .nav-tabs .nav-link {
+    border: none;
+    border-radius: 20px;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(214, 51, 132, 0.1); /* Light magenta */
+    color: #d63384;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+
+    .nav-tabs .nav-link.active {
+      background-color: #d63384;
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(214, 51, 132, 0.4);
+    }
+
+/* Tab content area */
+.tab-content {
+  margin-top: 2rem;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+  .card:hover {
+    transform: scale(1.01);
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+  }
+
+.card-body {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Titles and Text */
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #d63384;
+}
+
+.card-text {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #333333;
+}
+
+.card h6 {
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: #d63384;
+  border: none;
+  border-radius: 12px;
+  padding: 0.6rem 1.4rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  color: #ffffff;
+}
+
+  .btn-primary:hover {
+    background-color: #c2186a;
+    box-shadow: 0 4px 12px rgba(214, 51, 132, 0.3);
+  }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column !important;
+  }
+
+    .card img {
+      max-width: 100%;
+    }
+}

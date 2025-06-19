@@ -1,0 +1,30 @@
+<button type="button" class="btn-close custom-close" aria-label="Close" [routerLink]="'/main-page'"></button>
+<div class="container mt-4 bank-form">
+  <h2>Add Bank Account</h2>
+
+  <div *ngIf="message" class="alert" [ngClass]="{
+    'alert-success': messageType === 'success',
+    'alert-danger': messageType === 'error',
+    'alert-info': messageType === 'info'
+  }">
+    {{ message }}
+  </div>
+
+  <form (ngSubmit)="addBankAccount()">
+    <div class="mb-3">
+      <label for="iban" class="form-label">IBAN</label>
+      <input type="text" id="iban" [(ngModel)]="iban" name="iban" class="form-control" required />
+      <div *ngIf="iban.length < 12 && iban.length > 0" class="text-danger">IBAN must be at least 12 characters</div>
+    </div>
+
+    <div class="mb-3">
+      <label for="bankName" class="form-label">Bank Name</label>
+      <input type="text" id="bankName" [(ngModel)]="bankName" name="bankName" class="form-control" required />
+      <div *ngIf="bankName.length < 10 && bankName.length > 0" class="text-danger">Bank name must be at least 10 characters</div>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="isLoading">
+      {{ isLoading ? 'Adding...' : 'Add Bank Account' }}
+    </button>
+  </form>
+</div>
